@@ -13,7 +13,6 @@ function addToDone(event){
     mybutton.setAttribute("class", "fa fa-trash");
     ptag.style.color = "Black";
     ptag.style.textDecoration = "line-through";
-    ptag.style.fontFamily = "cursive";
     ptag.innerHTML = event.target.previousElementSibling.innerHTML;
     mybutton.addEventListener("click", remove);
     mydiv.appendChild(ptag);
@@ -52,7 +51,6 @@ function addForm() {
         var myhr = document.createElement("hr");
         mybutton.setAttribute("class", "fa fa-hourglass");
         ptag.innerHTML =  addtodo_form.Todo.value;
-        ptag.style.fontFamily = "cursive";
         mybutton.addEventListener("click", addUnderProcess);
         mydiv.appendChild(ptag);
         mydiv.appendChild(mybutton);

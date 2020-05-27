@@ -98,6 +98,8 @@ main p{
 
 main button{
     width: 10%;
+    border: 0.15em solid black;
+    border-radius: 0.25em;
 }
 
 main section div{

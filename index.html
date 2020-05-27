@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To DO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <div class = "top">
+        <div class="Image">
+            <img src="images/notebook.png">
+        </div>
+        <div class="Add">
+            <form id="form1" name="addtodo" onsubmit="event.preventDefault()">
+                <input type="text" name="Todo" placeholder="Add your todo's here">
+            </form>
+            <button onclick="addForm()" class="fa fa-plus"></button>
+        </div>
+    </div>
+    <main>
+        <section class="Todo">
+            <h2>Todo's</h2><br>
+            <hr>
+        </section>
+        <section class="Under-progress">
+            <h2>Under Progress</h2><br>
+            <hr>
+        </section>
+        <section class="Completed">
+            <h2>Done</h2><br>
+            <hr>
+        </section>
+    </main>
+    <script src="todo.js"></script>
+</body>
+</html>

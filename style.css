@@ -4,7 +4,7 @@ body{
     margin-right: 1em;
     text-align: center;
     background-color: rgb(86, 150, 224);
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 .top{
@@ -59,7 +59,7 @@ hr{
 
 .Add form input::placeholder{
     text-align: center;
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 1.5em;
 }
 

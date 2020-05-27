@@ -1,0 +1,129 @@
+body{
+    max-width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+    background-color: rgb(86, 150, 224);
+}
+
+.top{
+    margin:0 10%;
+    display: block;
+    width: 80%;
+}
+
+.Image{
+    margin-top: 0;
+}
+
+.Image img{
+/*    height: 25em;*/
+    width: 100%;
+    border: 0.15em solid black;
+    border-radius: 0.25em;
+}
+
+.Add{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.Add form {
+    width: 94%;
+    float: left;
+}
+.Add form input{
+    height: 2.5em;
+    width: 100%;
+    border: 0.15em solid black;
+    border-radius: 0.25em;
+    background-color: #F4F4F4;
+}
+.Add button{
+    height: 2.5em;
+    width: 5%;
+    float: right;
+    padding: 0;
+    border: 0.15em solid black;
+    border-radius: 0.25em;
+    background-color: #F4F4F4;
+}
+
+
+hr{
+    border: 0.05em solid black;
+    border-radius: 2em;
+}
+
+.Add form input::placeholder{
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5em;
+}
+
+main{
+    display: inline-block;
+    width: 80%;
+    margin: 0% 10%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    background-color: #F4F4F4;
+    border: 0.15em solid black;
+    border-radius: 0.25em;
+}
+
+main section{
+    padding:0 2%;
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    white-space: nowrap;
+} 
+
+main h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main p{
+    text-align: left;
+    margin: 0;
+    width: 90%;
+    float: left;
+    white-space: normal;
+}
+
+main button{
+    width: 10%;
+}
+
+main section div{
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:800px) {
+  .Todo, .Under-progress, .Completed {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+    .Add form{
+        
+        width: 85%;
+    }
+    .Add form input{
+        height: 6vw; 
+    }
+    .Add button{
+        height: 8vw;
+        width: 10%;
+        float:left;
+        margin-left: 5%;
+    }
+    main {
+        font-size: 3vw;
+    }
+    .Add form input::placeholder{
+        font-size: 4vw;
+    }
+}

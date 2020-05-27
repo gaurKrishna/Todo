@@ -33,7 +33,6 @@ function addUnderProcess(event){
     var myhr = document.createElement("hr");
     mybutton.setAttribute("class", "fa fa-check");
     ptag.innerHTML = event.target.previousElementSibling.innerHTML;
-    ptag.style.fontFamily = "cursive";
     mybutton.addEventListener("click", addToDone);
     mydiv.appendChild(ptag);
     mydiv.appendChild(mybutton);

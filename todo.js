@@ -32,7 +32,7 @@ function addUnderProcess(event){
     var mybutton = document.createElement("button");
     var myhr = document.createElement("hr");
     mybutton.setAttribute("class", "fa fa-check");
-    mybutton.setAttribute("class", "fa fa-check");
+    mybutton.style.backgroundColor = "rgb(52, 228, 75)";
     ptag.innerHTML = event.target.previousElementSibling.innerHTML;
     mybutton.addEventListener("click", addToDone);
     mydiv.appendChild(ptag);

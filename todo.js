@@ -10,6 +10,7 @@ function addToDone(event){
     var ptag = document.createElement("p");
     var myhr = document.createElement("hr");
     var mybutton = document.createElement("button");
+    mybutton.style.backgroundColor = "rgb(241, 72, 72)";
     mybutton.setAttribute("class", "fa fa-trash");
     ptag.style.color = "Black";
     ptag.style.textDecoration = "line-through";
@@ -31,6 +32,7 @@ function addUnderProcess(event){
     var mybutton = document.createElement("button");
     var myhr = document.createElement("hr");
     mybutton.setAttribute("class", "fa fa-check");
+    mybutton.setAttribute("class", "fa fa-check");
     ptag.innerHTML = event.target.previousElementSibling.innerHTML;
     mybutton.addEventListener("click", addToDone);
     mydiv.appendChild(ptag);
@@ -50,6 +52,7 @@ function addForm() {
         var mybutton = document.createElement("button");
         var myhr = document.createElement("hr");
         mybutton.setAttribute("class", "fa fa-hourglass");
+        mybutton.style.backgroundColor = "rgb(231, 219, 50)";
         ptag.innerHTML =  addtodo_form.Todo.value;
         mybutton.addEventListener("click", addUnderProcess);
         mydiv.appendChild(ptag);

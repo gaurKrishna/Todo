@@ -59,7 +59,7 @@ function addForm() {
         mydiv.appendChild(mybutton);
         mydiv.appendChild(myhr);
         firstsection.appendChild(mydiv); 
-        console.log(addtodo_form.Todo.placeholder);
+        addtodo_form.Todo.value = "";
     }
     else
     {
